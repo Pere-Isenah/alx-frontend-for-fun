@@ -1,8 +1,24 @@
 #!/usr/bin/env python3
+"""
+Convert Markdown to HTML
+
+Usage:
+    markdown2html.py README.md README.html
+
+Arguments:
+    input_filename  The input Markdown file.
+    output_filename The output HTML file.
+
+This script takes an input Markdown file and converts it to an HTML file.
+"""
+
 import sys
 import os
 
 def main():
+    """
+    Main function to convert Markdown to HTML.
+    """
     if len(sys.argv) < 3:
         print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
         sys.exit(1)
